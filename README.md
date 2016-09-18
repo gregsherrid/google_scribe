@@ -75,3 +75,13 @@ Google Scripts Setup
 
 Google responds to the logging attempt with a 302 temporary redirect message, but still correctly logs the data.
 This has made setting up tests difficult.
+
+License
+----
+
+MIT License
+
+Author
+----
+
+Greg Sherrid
