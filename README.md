@@ -1,7 +1,9 @@
 Google Scribe
 =========
 
-Based on and inspired by Scott Olmsted's excellent work
+Allows writing data to google sheets via a public URL. 
+
+Based on and inspired by Scott Olmsted's guide for doing a similar thing using google's front end
 http://railsrescue.com/blog/2015-05-28-step-by-step-setup-to-send-form-data-to-google-sheets/
 
 Set up on Google Sheets
@@ -15,5 +17,5 @@ Set up on Google Sheets
 6. Sheets will request permissions, which you should grant
 7. Click to File -> Manage Versions and save a version of the project
 8. Click to Resources -> Current Project's Triggers. Select 'doPost', 'From spreadsheet', and 'On form submit.' Save
-10. Click to Publish -> Deploy. Select '1,' 'Me,' and 'Anyone, even anonymous.' Click Deploy
-11. Copy and save the URL in the dialog that appears
+9. Click to Publish -> Deploy. Select '1,' 'Me,' and 'Anyone, even anonymous.' Click Deploy
+10. Copy and save the URL in the dialog that appears
