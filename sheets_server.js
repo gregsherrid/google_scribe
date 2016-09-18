@@ -41,9 +41,11 @@ function handleResponse(e) {
       if (headers[i] == "Timestamp") {
         // Automatically timestamp the request if that column is included on the sheet
         row.push(new Date());
-      } else { 
+      } else if (e.parameter[headers[i]] !== undefined) { 
         // Get the data from the request params for the header value 
         row.push(e.parameter[headers[i]]);
+      } else {
+        row.push("");
       }
     }
     
