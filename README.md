@@ -1,7 +1,8 @@
 Google Scribe
 =========
 
-Allows writing data to google sheets via a public URL. 
+Allows writing data to google sheets via a public URL. Useful for writing data or error logging
+on small projects without the hassle of setting up a persistant data store.
 
 Based on and inspired by
 [Scott Olmsted's guide](http://railsrescue.com/blog/2015-05-28-step-by-step-setup-to-send-form-data-to-google-sheets/)
@@ -16,7 +17,7 @@ Add this line to your Gemfile:
 gem 'google_scribe'
 ```
 
-Complete the google sheets set up (below) and save the url generated on the last step.
+Complete the Google Scripts Setup (below) and save the url generated on the last step.
 
 Usage
 -----
@@ -24,7 +25,7 @@ Usage
 Initialize:
 
 ```
-scribe_url = "https://script.google.com/macros/s/..." # The Google Scribe URL 
+scribe_url = "https://script.google.com/macros/s/..." # The Google Script URL 
 scribe = GoogleScribe.new(scribe_url)
 ```
 
@@ -50,18 +51,18 @@ end
 ```
 
 If the block returns an error, GoogleScribe will log the exception message
-and the first line of the backtrack in the "Error Message" column, if present.
+and the first line of the backtrace in the "Error Message" column, if present.
 The exception will still be raised normally, unless the exception is suppressed by calling
 `scribe.log_process("Weekly Update Emails")`.
 
-Set up on Google Sheets
+Google Scripts Setup
 ----
 
 1. Create a sheet in Google Drive
 2. Add the headers you're planning to pass to sheets (case-sensitive).
 3. Optionally, add column for 'Timestamp.' To support process logging, add columns 'Process,' 'Success,' and 'Error Message'
 4. Go to Tools -> Script Editor
-5. Copy and past the contents of sheets_server.js into the Code Editor and save
+5. Copy and paste the contents of `sheets_server.js` into the Code Editor and save
 6. On the navbar of Script Editor, click Run -> setup
 7. Sheets will request permissions, which you should grant
 8. Click to File -> Manage Versions and save a version of the project
