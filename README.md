@@ -1,10 +1,10 @@
-Google Sheets Logging
+Google Scribe
 =========
 
 Based on and inspired by Scott Olmsted's excellent work
 http://railsrescue.com/blog/2015-05-28-step-by-step-setup-to-send-form-data-to-google-sheets/
 
-Google Sheets setup
+Set up on Google Sheets
 ----
 
 1. Create a sheet in Google Drive
