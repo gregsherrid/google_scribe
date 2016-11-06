@@ -2,7 +2,7 @@ Google Scribe
 =========
 
 Allows writing data to google sheets via a public URL. Useful for writing data or error logging
-on small projects without the hassle of setting up a persistant data store.
+on small projects without the hassle of setting up a persistent data store.
 
 Based on and inspired by
 [Scott Olmsted's guide](http://railsrescue.com/blog/2015-05-28-step-by-step-setup-to-send-form-data-to-google-sheets/)
