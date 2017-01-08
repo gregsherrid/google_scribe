@@ -62,7 +62,7 @@ Google Scripts Setup
 2. Add the headers you're planning to pass to sheets (case-sensitive).
 3. Optionally, add column for 'Timestamp.' To support process logging, add columns 'Process,' 'Success,' and 'Error Message'
 4. Go to Tools -> Script Editor
-5. Copy and paste the contents of `sheets_server.js` into the Code Editor and save
+5. Copy and paste the contents of [sheets_server.js](https://github.com/gregsherrid/google_scribe/blob/master/sheets_server.js) into the Code Editor and save
 6. On the navbar of Script Editor, click Run -> setup
 7. Sheets will request permissions, which you should grant
 8. Click to File -> Manage Versions and save a version of the project
