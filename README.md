@@ -39,7 +39,7 @@ scribe.send_data(data)
 
 Log Process:
 
-````
+```
 scribe.log_process("Weekly Update Emails") do
 	user_count = 0
 	Users.find_each do |u|
