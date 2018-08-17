@@ -66,8 +66,8 @@ Google Scripts Setup
 6. On the navbar of Script Editor, click Run -> setup
 7. Sheets will request permissions, which you should grant
 8. Click to File -> Manage Versions and save a version of the project
-9. Click to Resources -> Current Project's Triggers. Select 'doPost', 'From spreadsheet', and 'On form submit.' Save
-10. Click to Publish -> Deploy. Select '1,' 'Me,' and 'Anyone, even anonymous.' Click Deploy
+9. Click to Edit -> Current Project's Triggers (previously: Resources -> Current Project's Triggers). Select 'doPost', 'From spreadsheet', and 'On form submit.' Save
+10. Click to Publish -> Deploy as web app... (formerly Publish -> Deploy). Select '1,' 'Me,' and 'Anyone, even anonymous.' Click Deploy
 11. Copy and save the URL in the dialog that appears
 
 302 Response and Testing
